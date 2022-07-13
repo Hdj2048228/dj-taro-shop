@@ -1,0 +1,56 @@
+{
+  "name": "dj-taro-shop",
+  "version": "0.0.1",
+  "private": true,
+  "description": "微信小程序商城",
+  "templateInfo": {
+    "name": "default",
+    "typescript": false,
+    "css": "sass"
+  },
+  "scripts": {
+    "build:weapp": "taro build --type weapp",
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "dev": "npm run build:weapp -- --watch",
+    "start": "npm run build:weapp -- --watch",
+    "build": "taro build --type weapp"
+  },
+  "browserslist": [
+    "last 3 versions",
+    "Android >= 4.1",
+    "ios >= 8"
+  ],
+  "author": "",
+  "dependencies": {
+    "@babel/runtime": "^7.13.10",
+    "@tarojs/cli": "3.4.13",
+    "@tarojs/components": "3.4.13",
+    "@tarojs/plugin-framework-react": "^3.4.13",
+    "@tarojs/react": "3.4.13",
+    "@tarojs/runtime": "3.4.13",
+    "@tarojs/taro": "3.4.13",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "taro-ui": "^3.0.0-alpha.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@tarojs/mini-runner": "3.4.13",
+    "@tarojs/webpack-runner": "3.4.13",
+    "@types/react": "^17.0.3",
+    "@types/webpack-env": "^1.16.0",
+    "babel-preset-taro": "3.4.13",
+    "eslint": "^7.21.0",
+    "eslint-config-taro": "3.4.13",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "less": "^4.1.1",
+    "prettier": "^2.2.1",
+    "sass": "^1.32.8",
+    "stylelint": "13.12.0"
+  }
+}

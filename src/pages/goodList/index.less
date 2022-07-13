@@ -1,0 +1,147 @@
+.cartWrap {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  .panelLeft {
+    flex: 1;
+    height: calc(~"100vh - 120px");
+    background-color: #f8f8f8;
+    .titleDom {
+      height: 80px;
+      line-height: 80px;
+      color: #131313;
+      text-align: center;
+      border-bottom: 1px solid #d8d8d8;
+    }
+    .titleActive {
+      height: 80px;
+      line-height: 80px;
+      color: #fff;
+      text-align: center;
+      background-color: #2083e4;
+    }
+  }
+  .panelRight {
+    flex: 3;
+    height: calc(~"100vh - 120px");
+    .tabHead {
+      height: 80px;
+      line-height: 80px;
+      color: #fff;
+      text-align: center;
+      background-color: #2083e4;
+    }
+    .tabCon {
+      display: inline-block;
+      padding: 20px 0;
+      .itemImgWrap {
+        float: left;
+        width: 220px;
+        height: 220px;
+        box-sizing: border-box;
+        margin-right: 10px;
+        padding: 10px;
+        overflow: hidden;
+        .itemImg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .itemTxtWrap {
+        box-sizing: border-box;
+        padding-right: 40px;
+        overflow: hidden;
+        .itemTxt {
+          display: inline-block;
+          font-size: 32px;
+          color: #777;
+          padding-top: 20px;
+        }
+        .itemCon {
+          font-size: 28px;
+          color: #131313;
+          padding: 20px 0;
+        }
+        .itemPrice {
+          position: relative;
+          color: #d82b2f;
+          .iconWrap {
+            float: right;
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+    }
+  }
+  .buyingWrap {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #666;
+    font-family: "Microsoft YaHei UI", serif;
+    .buyingIcon {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: #000;
+      margin: 20px 0 0 20px;
+      .badgeDom {
+        position: absolute;
+        right: -6px;
+        top: -14px;
+        z-index: 1;
+        transform: translate(50%, 0);
+        font-size: 20px;
+        text-align: center;
+        color: #fff;
+        height: 28px;
+        line-height: 28px;
+        padding: 0 10px;
+        border-radius: 14px 14px 14px 0;
+        overflow: hidden;
+        background: #ff4949;
+        box-shadow: 0 4px 8px 0 rgba(233, 59, 61, 0.2);
+      }
+    }
+    .moneyDom {
+      position: absolute;
+      z-index: 99;
+      top: 40px;
+      left: 128px;
+      color: #fff;
+      font-size: 36px;
+      .moneyTxt {
+        margin-right: 10px;
+      }
+    }
+    .goPay {
+      position: absolute;
+      z-index: 99;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 120px;
+      line-height: 120px;
+      text-align: center;
+      color: #fff;
+      background-color: #2083e4;
+    }
+  }
+}
+
+.cartWrap:after {
+  clear: both;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
