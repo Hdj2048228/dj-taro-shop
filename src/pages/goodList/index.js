@@ -214,7 +214,7 @@ class GoodList extends Component {
                         className="itemImgWrap"
                         onClick={this.goGoodInfo.bind(this, item.id, item.name, item.price)}
                       >
-                        <Image className="itemImg" src={item.imageUrl} mode="widthFix" />
+                        <Image className="itemImg" src="https://s1.ax1x.com/2020/06/09/t4u8FH.jpg" mode="widthFix" />
                       </View>
                       <View className="itemTxtWrap">
                         <View onClick={this.goGoodInfo.bind(this, item.id, item.name, item.price)}>

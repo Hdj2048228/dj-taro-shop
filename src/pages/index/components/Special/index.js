@@ -35,7 +35,7 @@ class Special extends Component {
                 onClick={this.goGoodInfo.bind(this, special.id, special.name, special.price)}
               >
                 <View className="specialImgWrap">
-                  <Image className="specialImg" src={special.imgUrl} />
+                  <Image className="specialImg" src="https://s1.ax1x.com/2020/06/09/t4u8FH.jpg" />
                 </View>
                 <View className="specialTitle">{special.name}</View>
                 <View className="specialPrice">￥{special.price}</View>

@@ -20,7 +20,7 @@
     "Android >= 4.1",
     "ios >= 8"
   ],
-  "author": "",
+  "author": "hdj",
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "@tarojs/cli": "3.4.13",

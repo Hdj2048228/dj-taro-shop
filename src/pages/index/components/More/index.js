@@ -35,7 +35,7 @@ class More extends Component {
                 onClick={this.goGoodInfo.bind(this, more.id, more.name, more.price)}
               >
                 <View className="moreImgWrap">
-                  <Image className="moreImg" src={more.imgUrl} />
+                  <Image className="moreImg" src="https://s1.ax1x.com/2020/06/09/t4u8FH.jpg" />
                 </View>
                 <View className="moreTitle">{more.name}</View>
                 <View className="morePrice">￥{more.price}</View>
